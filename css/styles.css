@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 10px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+/* Gallery grid */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.art-card {
+  width: calc(33% - 20px);
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.art-card:hover {
+  transform: scale(1.05);
+}
+
+.art-card img {
+  width: 100%;
+  display: block;
+}
+
+.art-card h3 {
+  margin: 10px;
+  font-size: 18px;
+}
+
+.art-card p {
+  margin: 0 10px 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.art-card a.button {
+  display: block;
+  text-align: center;
+  margin: 10px;
+  padding: 10px 0;
+  background: #007BFF;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.art-card a.button:hover {
+  background: #0056b3;
+}
+
+/* Forms */
+.form-container {
+  max-width: 360px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px 8px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Art Details Page */
+.art-detail {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.art-detail img {
+  max-width: 450px;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.art-detail .details {
+  flex: 1;
+  min-width: 250px;
+}
+
+.art-detail .details h2 {
+  margin-top: 0;
+}
+
+.art-detail .details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.art-detail .details ul li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 800px) {
+  .art-card {
+    width: calc(50% - 20px);
+  }
+  .art-detail {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .art-card {
+    width: 100%;
+  }
+}

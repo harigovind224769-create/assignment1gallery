@@ -1,0 +1,26 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Secrets
+.env
+
+# OneDrive temp
+~$*
+
+# Images and build artifacts (if you don't want them in repo uncomment)
+# *.jpg
+# *.png
